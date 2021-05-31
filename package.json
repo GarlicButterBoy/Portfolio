@@ -1,0 +1,15 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "Nick Sturch-Flints Programming Portfolio (Built with JS)",
+  "main": "index.js",
+  "repository": "https://github.com/GarlicButterBoy/Portfolio.git",
+  "author": "Nick Sturch-Flint <nickdoesreviews@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.3",
+    "bootstrap": "^5.0.1",
+    "jquery": "^3.6.0",
+    "popper.js": "^1.16.1"
+  }
+}

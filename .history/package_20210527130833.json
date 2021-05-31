@@ -1,0 +1,9 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "Nick Sturch-Flints Programming Portfolio (Built with JS)",
+  "main": "index.js",
+  "repository": "https://github.com/GarlicButterBoy/Portfolio.git",
+  "author": "Nick Sturch-Flint <nickdoesreviews@gmail.com>",
+  "license": "MIT"
+}
