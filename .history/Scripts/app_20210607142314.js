@@ -5,7 +5,7 @@
 (function()
 {
     //declare function variables here...
-    console.log("%cDeclaring Variables", "color:blue");
+    console.log("%cInitializing Variables", "color:green");
 
     /**
      * Variable Initialization in this function

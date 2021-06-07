@@ -5,7 +5,6 @@
 (function()
 {
     //declare function variables here...
-    console.log("%cDeclaring Variables", "color:blue");
 
     /**
      * Variable Initialization in this function
@@ -26,5 +25,6 @@
 
     }
 
+    
     window.addEventListener("load", Start);
 })();

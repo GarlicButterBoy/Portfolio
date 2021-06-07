@@ -1,0 +1,38 @@
+//IIFE - Immediately Invoked Function Expression
+// OR - Anonymous Self Executing Function
+(function()
+{
+
+
+
+    function Start()
+    {
+        console.log("%cApp Started", "color:blue; font-size:20px;");
+        //get a reference to the content area
+        let contentArea = document.getElementById("contentArea");
+        //create an h2 element
+        let h2 = document.createElement("h2");
+        //add a class attribute
+        h2.setAttribute("class", "display-6");
+        h2.textContent = "This is a secondary header";
+        //append the new node
+        contentArea.appendChild(h2);
+
+        //add event listener 
+        h2.addEventListener("click", () => {
+            h2.style.color = (h2.style.color == "blue" ) ? "black" : "blue";
+        })
+
+        Main();
+    }
+
+    function Main()
+    {
+        console.log("%c|", "color:green; font-size:16px;");
+        console.log("%cv", "color:green; font-size:16px;");
+        console.log("%cMain Portfolio Started", "color:green; font-size:16px;");
+
+    }
+
+    window.addEventListener("load", Start);
+})();
