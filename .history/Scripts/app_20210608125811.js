@@ -15,13 +15,12 @@
         console.log("%cInitializing Variables", "color:green");
 
         let name = window.location.pathname; //returns full .html page name
-        let pageName = name.substring(1, name.length - 5); //returns page name without the first / and the final .html
+        let pageName = name.substring(1, name.length - 5);
 
 
         switch(pageName)
         {
             case "index":
-                document.getElementById("home").className = "nav-link active";
                 break;
             case "about":
                 break;
@@ -35,8 +34,6 @@
                 console.error("Page Not Found");
                 break;
         }
-
-        $("#"+pageName).addClass("active"); //makes the active page link highlighted
 
         Main();
     }

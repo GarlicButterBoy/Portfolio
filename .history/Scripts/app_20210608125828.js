@@ -21,7 +21,6 @@
         switch(pageName)
         {
             case "index":
-                document.getElementById("home").className = "nav-link active";
                 break;
             case "about":
                 break;
@@ -35,8 +34,7 @@
                 console.error("Page Not Found");
                 break;
         }
-
-        $("#"+pageName).addClass("active"); //makes the active page link highlighted
+        
 
         Main();
     }

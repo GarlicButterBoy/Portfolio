@@ -21,7 +21,7 @@
         switch(pageName)
         {
             case "index":
-                document.getElementById("home").className = "nav-link active";
+                document.getElementById("home").className = "nav-item active";
                 break;
             case "about":
                 break;

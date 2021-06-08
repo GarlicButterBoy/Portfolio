@@ -38,6 +38,8 @@
 
         $("#"+pageName).addClass("active"); //makes the active page link highlighted
 
+        $(".btn.btn-primary").hide();
+
         Main();
     }
 

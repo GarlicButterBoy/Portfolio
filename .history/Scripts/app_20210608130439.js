@@ -37,6 +37,7 @@
         }
 
         $("#"+pageName).addClass("active"); //makes the active page link highlighted
+        
 
         Main();
     }

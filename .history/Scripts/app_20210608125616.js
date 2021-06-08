@@ -14,29 +14,23 @@
     {
         console.log("%cInitializing Variables", "color:green");
 
-        let name = window.location.pathname; //returns full .html page name
-        let pageName = name.substring(1, name.length - 5); //returns page name without the first / and the final .html
+        let name = window.location.pathname;
 
-
-        switch(pageName)
+        switch(name.substring(1, name.length - 5))
         {
             case "index":
-                document.getElementById("home").className = "nav-link active";
-                break;
+            break;
             case "about":
-                break;
+            break;
             case "projects":
-                break;
+            break;
             case "services":
-                break;
+            break;
             case "contact":
-                break;
+            break;
             default:
-                console.error("Page Not Found");
                 break;
         }
-
-        $("#"+pageName).addClass("active"); //makes the active page link highlighted
 
         Main();
     }

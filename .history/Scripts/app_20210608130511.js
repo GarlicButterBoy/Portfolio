@@ -36,7 +36,7 @@
                 break;
         }
 
-        $("#"+pageName).addClass("active"); //makes the active page link highlighted
+        $("#"+pageName).addClass("active"); //makes the active page link highlightedgit 
 
         Main();
     }
