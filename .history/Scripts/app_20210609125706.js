@@ -28,20 +28,20 @@
         switch(pageName)
         {
             case "index":
-                DisplayHome();
-                
+                DisplayHome()
+                document.getElementById("home").className = "nav-link active";
+               // $("button").on("click", () => {
+               //     location.href = "projects.html";
+              //  });
                 break;
             case "about":
-                DisplayAbout();
+                DisplayAbout()
                 break;
             case "projects":
-                DisplayProjects();
                 break;
             case "services":
-                DisplayServices();
                 break;
             case "contact":
-                DisplayContact();
                 break;
             default:
                 console.error("Page Not Found");
@@ -53,10 +53,7 @@
 
     function DisplayHome()
     {
-        document.getElementById("home").className = "nav-link active";
-         $("button").on("click", () => {
-              location.href = "projects.html";
-         });
+
     }
 
     function DisplayAbout()

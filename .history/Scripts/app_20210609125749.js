@@ -55,8 +55,8 @@
     {
         document.getElementById("home").className = "nav-link active";
          $("button").on("click", () => {
-              location.href = "projects.html";
-         });
+               //     location.href = "projects.html";
+              //  });
     }
 
     function DisplayAbout()

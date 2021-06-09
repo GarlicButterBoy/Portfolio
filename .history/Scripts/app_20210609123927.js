@@ -14,13 +14,6 @@
     {
         console.log("%cInitializing Variables", "color:green");
 
-        PageSwitcher();
-
-        Main();
-    }
-
-    function PageSwitcher()
-    {
         let name = window.location.pathname; //returns full .html page name
         let pageName = name.substring(1, name.length - 5); //returns page name without the first / and the final .html
 
@@ -28,20 +21,15 @@
         switch(pageName)
         {
             case "index":
-                DisplayHome();
-                
+                document.getElementById("home").className = "nav-link active";
                 break;
             case "about":
-                DisplayAbout();
                 break;
             case "projects":
-                DisplayProjects();
                 break;
             case "services":
-                DisplayServices();
                 break;
             case "contact":
-                DisplayContact();
                 break;
             default:
                 console.error("Page Not Found");
@@ -49,32 +37,11 @@
         }
 
         $("#"+pageName).addClass("active"); //makes the active page link highlighted
+
+        Main();
     }
 
-    function DisplayHome()
-    {
-        document.getElementById("home").className = "nav-link active";
-         $("button").on("click", () => {
-              location.href = "projects.html";
-         });
-    }
-
-    function DisplayAbout()
-    {
-        
-    }
-
-    function DisplayProjects()
-    {
-        
-    }
-
-    function DisplayServices()
-    {
-        
-    }
-
-    function DisplayContact()
+    function PageSwitcher()
     {
         
     }

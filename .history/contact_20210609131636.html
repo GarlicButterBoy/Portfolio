@@ -36,20 +36,19 @@
             <div class="jumbotron p-2" id="contentArea">
               <label for="basic-url" class="form-label"><i class="fas fa-id-card-alt"></i> Contact Information</label>
               <div class="input-group mb-3">
-                <input type="email" class="form-control" placeholder="Email" aria-label="Email" aria-describedby="basic-addon2">
+                <input type="text" class="form-control" placeholder="Email" aria-label="Email" aria-describedby="basic-addon2">
                 <span class="input-group-text" id="basic-addon2">test@example.com</span>
               </div>
 
               <div class="input-group mb-3">
                 <span class="input-group-text" id="basic-addon2">Contact Number</span>
-                <input type="tel" class="form-control" placeholder="Contact Number" aria-label="Contact Number" aria-describedby="basic-addon2">
+                <input type="text" class="form-control" placeholder="Contact Number" aria-label="Contact Number" aria-describedby="basic-addon2">
                 
-                <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
-                  <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
-                  <label class="btn btn-outline-primary" for="btnradio1">Text</label>
-                
-                  <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
-                  <label class="btn btn-outline-primary" for="btnradio2">Call</label>
+                <div class="input-group mb-3">
+                  <span>Text </span>
+                  <input class="form-check-input mt-0" type="radio" value="Call" aria-label="Radio button for following text input">
+                  <span>Email </span>
+                  <input class="form-check-input mt-0" type="radio" value="Text" aria-label="Radio button for following text input">
                 </div>
 
               </div>
@@ -74,8 +73,6 @@
                 <span class="input-group-text">Message</span>
                 <textarea class="form-control" placeholder="Reach out to me with a personalized message" aria-label="Message"></textarea>
               </div>
-              <button class="btn btn-primary mt-2" id="submitButton"><i class="fas fa-file-import"></i> Submit</button>
-              <button class="btn btn-secondary mt-2" id="resetButton"><i class="fas fa-undo-alt"></i> Reset</button>
             </div>
           </div>
         </div>

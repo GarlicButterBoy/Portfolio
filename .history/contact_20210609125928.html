@@ -34,48 +34,38 @@
         <div class="row">
           <div class="col">
             <div class="jumbotron p-2" id="contentArea">
-              <label for="basic-url" class="form-label"><i class="fas fa-id-card-alt"></i> Contact Information</label>
               <div class="input-group mb-3">
-                <input type="email" class="form-control" placeholder="Email" aria-label="Email" aria-describedby="basic-addon2">
-                <span class="input-group-text" id="basic-addon2">test@example.com</span>
-              </div>
-
-              <div class="input-group mb-3">
-                <span class="input-group-text" id="basic-addon2">Contact Number</span>
-                <input type="tel" class="form-control" placeholder="Contact Number" aria-label="Contact Number" aria-describedby="basic-addon2">
-                
-                <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
-                  <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
-                  <label class="btn btn-outline-primary" for="btnradio1">Text</label>
-                
-                  <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
-                  <label class="btn btn-outline-primary" for="btnradio2">Call</label>
-                </div>
-
+                <span class="input-group-text" id="basic-addon1">Email</span>
+                <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
               </div>
               
-              <label for="basic-url" class="form-label"><i class="fas fa-user-friends"></i> Personal Information</label>
               <div class="input-group mb-3">
-                <span class="input-group-text" id="basic-addon3">First Name</span>
+                <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                <span class="input-group-text" id="basic-addon2">@example.com</span>
+              </div>
+              
+              <label for="basic-url" class="form-label">Your vanity URL</label>
+              <div class="input-group mb-3">
+                <span class="input-group-text" id="basic-addon3">https://example.com/users/</span>
                 <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
-
-                <span class="input-group-text">Surname</span>
-                <input type="text" class="form-control" aria-label="Surname">
               </div>
               
               <div class="input-group mb-3">
-                <span class="input-group-text">Preferred Name</span>
-                <input type="text" class="form-control" aria-label="Preferred Name">
+                <span class="input-group-text">$</span>
+                <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+                <span class="input-group-text">.00</span>
               </div>
               
-              
+              <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="Username" aria-label="Username">
+                <span class="input-group-text">@</span>
+                <input type="text" class="form-control" placeholder="Server" aria-label="Server">
+              </div>
               
               <div class="input-group">
-                <span class="input-group-text">Message</span>
-                <textarea class="form-control" placeholder="Reach out to me with a personalized message" aria-label="Message"></textarea>
+                <span class="input-group-text">With textarea</span>
+                <textarea class="form-control" aria-label="With textarea"></textarea>
               </div>
-              <button class="btn btn-primary mt-2" id="submitButton"><i class="fas fa-file-import"></i> Submit</button>
-              <button class="btn btn-secondary mt-2" id="resetButton"><i class="fas fa-undo-alt"></i> Reset</button>
             </div>
           </div>
         </div>
