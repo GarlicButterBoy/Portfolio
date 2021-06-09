@@ -78,7 +78,7 @@
     {
         $("#submitButton").on("click", () =>
         {
-            e.preventDefault();
+            event.preventDefault
         });
     }
 

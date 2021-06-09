@@ -76,10 +76,7 @@
 
     function DisplayContact()
     {
-        $("#submitButton").on("click", () =>
-        {
-            e.preventDefault();
-        });
+        $("#")
     }
 
     /**

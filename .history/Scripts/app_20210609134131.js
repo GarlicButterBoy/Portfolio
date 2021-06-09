@@ -78,8 +78,8 @@
     {
         $("#submitButton").on("click", () =>
         {
-            e.preventDefault();
-        });
+            
+        })
     }
 
     /**
