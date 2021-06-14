@@ -128,10 +128,8 @@ class Contact
         {
             e.preventDefault();
 
-            if(confirm("Are you sure?"))
-            {
-                clearForm();
-            }
+
+            
         });
     }
 

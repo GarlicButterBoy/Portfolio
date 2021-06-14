@@ -96,7 +96,12 @@ class Contact
         
         function clearForm()
         {
-            $("#contactForm")[0].reset();
+            $("#emailAddress").val() = "";
+            let contactNumber = $("#contactNumber").val() = "";
+            let firstName = $("#firstName").val() = "";
+            let lastName = $("#lastName").val() = "";
+            let prefName = $("#prefName").val() = "";
+            let message = $("#message").val();
         }
 
         $("#submitButton").on("click", (e) =>
@@ -121,17 +126,6 @@ class Contact
             contact.contactMessage = message;
 
             console.log(contact);
-            clearForm();
-        });
-
-        $("#resetButton").on("click", (e) =>
-        {
-            e.preventDefault();
-
-            if(confirm("Are you sure?"))
-            {
-                clearForm();
-            }
         });
     }
 

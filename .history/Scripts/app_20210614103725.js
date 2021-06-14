@@ -94,10 +94,6 @@ class Contact
     function DisplayContact()
     {
         
-        function clearForm()
-        {
-            $("#contactForm")[0].reset();
-        }
 
         $("#submitButton").on("click", (e) =>
         {
@@ -117,21 +113,7 @@ class Contact
 
             contact.emailAddress = emailAddress;
             contact.contactNumber = contactNumber;
-            contact.contactName = `${prefName} (${lastName}, ${firstName})`;
-            contact.contactMessage = message;
-
-            console.log(contact);
-            clearForm();
-        });
-
-        $("#resetButton").on("click", (e) =>
-        {
-            e.preventDefault();
-
-            if(confirm("Are you sure?"))
-            {
-                clearForm();
-            }
+            conta
         });
     }
 

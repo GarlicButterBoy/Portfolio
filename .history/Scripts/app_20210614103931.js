@@ -94,10 +94,7 @@ class Contact
     function DisplayContact()
     {
         
-        function clearForm()
-        {
-            $("#contactForm")[0].reset();
-        }
+        function clearForm
 
         $("#submitButton").on("click", (e) =>
         {
@@ -121,17 +118,6 @@ class Contact
             contact.contactMessage = message;
 
             console.log(contact);
-            clearForm();
-        });
-
-        $("#resetButton").on("click", (e) =>
-        {
-            e.preventDefault();
-
-            if(confirm("Are you sure?"))
-            {
-                clearForm();
-            }
         });
     }
 

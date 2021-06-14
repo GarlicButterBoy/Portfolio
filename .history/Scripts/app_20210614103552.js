@@ -16,7 +16,6 @@ class Contact
 (function()
 {
     //declare function variables here...
-    let contact = new Contact();
     console.log("%cDeclaring Variables", "color:blue");
 
     /**
@@ -94,10 +93,6 @@ class Contact
     function DisplayContact()
     {
         
-        function clearForm()
-        {
-            $("#contactForm")[0].reset();
-        }
 
         $("#submitButton").on("click", (e) =>
         {
@@ -114,24 +109,6 @@ class Contact
             console.log(`Contact Number: ${contactNumber}`);
             console.log(`Name          : ${prefName} (${lastName}, ${firstName});`);
             console.log(`Message       : ${message}`);
-
-            contact.emailAddress = emailAddress;
-            contact.contactNumber = contactNumber;
-            contact.contactName = `${prefName} (${lastName}, ${firstName})`;
-            contact.contactMessage = message;
-
-            console.log(contact);
-            clearForm();
-        });
-
-        $("#resetButton").on("click", (e) =>
-        {
-            e.preventDefault();
-
-            if(confirm("Are you sure?"))
-            {
-                clearForm();
-            }
         });
     }
 

@@ -127,11 +127,6 @@ class Contact
         $("#resetButton").on("click", (e) =>
         {
             e.preventDefault();
-
-            if(confirm("Are you sure?"))
-            {
-                clearForm();
-            }
         });
     }
 

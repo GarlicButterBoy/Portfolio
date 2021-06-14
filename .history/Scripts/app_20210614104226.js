@@ -96,7 +96,7 @@ class Contact
         
         function clearForm()
         {
-            $("#contactForm")[0].reset();
+            $("#contactForm").reset()
         }
 
         $("#submitButton").on("click", (e) =>
@@ -122,16 +122,6 @@ class Contact
 
             console.log(contact);
             clearForm();
-        });
-
-        $("#resetButton").on("click", (e) =>
-        {
-            e.preventDefault();
-
-            if(confirm("Are you sure?"))
-            {
-                clearForm();
-            }
         });
     }
 

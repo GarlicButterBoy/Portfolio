@@ -124,15 +124,9 @@ class Contact
             clearForm();
         });
 
-        $("#resetButton").on("click", (e) =>
+        $("#submitButton").on("click", (e) =>
         {
             e.preventDefault();
-
-            if(confirm("Are you sure?"))
-            {
-                clearForm();
-            }
-        });
     }
 
     function Display404()

@@ -123,16 +123,6 @@ class Contact
             console.log(contact);
             clearForm();
         });
-
-        $("#resetButton").on("click", (e) =>
-        {
-            e.preventDefault();
-
-            if(confirm("Are you sure?"))
-            {
-                clearForm();
-            }
-        });
     }
 
     function Display404()

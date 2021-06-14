@@ -130,7 +130,7 @@ class Contact
 
             if(confirm("Are you sure?"))
             {
-                clearForm();
+                
             }
         });
     }
