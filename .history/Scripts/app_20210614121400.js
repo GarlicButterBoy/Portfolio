@@ -96,13 +96,13 @@ class Contact
 
         function validateInput(selector, condition, errorMessage = "")
         {
-            if(condition)
+            if(($(selector).val().length < 8))
             {
                 $("#errorMessage")[0].textContent = errorMessage;
                 $("#errorMessage").show();
                 $(selector).trigger("focus");
                 $(selector).css("border", "2px solid red");
-                console.log(errorMessage)
+                console.log("Email too short")
             }
             else
             {
@@ -121,8 +121,7 @@ class Contact
 
         //Email Validation (Lite)
         $("#emailAddress").on("change", (e) => {
-            validateInput("#emailAddress", (($("#emailAddress").val().length < 8) || (!$("#emailAddress").val().includes("@"))), "Email is Invalid");
-            /* if(($("#emailAddress").val().length < 8) || (!$("#emailAddress").val().includes("@")))
+            if(($("#emailAddress").val().length < 8) || (!$("#emailAddress").val().includes("@")))
             {
                 $("#errorMessage")[0].textContent = "Email is too short";
                 $("#errorMessage").show();
@@ -134,16 +133,13 @@ class Contact
             {
                 $("#errorMessage").hide();
                 $("#emailAddress").css("border", "2px solid #ced4da");
-            } */
+            }
         });
 
         //Phone Number Validation
         $("#contactNumber").on("change", (e) => {
             let phonePattern = /^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]\d{3}[\s.-]\d{4}$/;
-
-            validateInput("#contactNumber", (!phonePattern.test($("#contactNumber").val())), "Number is invalid");
-
-            /* if(!phonePattern.test($("#contactNumber").val()))
+            if(!phonePattern.test($("#contactNumber").val()))
             {
                 $("#errorMessage")[0].textContent = "Number is invalid";
                 $("#errorMessage").show();
@@ -155,12 +151,11 @@ class Contact
             {
                 $("#errorMessage").hide();
                 $("#contactNumber").css("border", "2px solid #ced4da");
-            } */
+            }
         });
 
         $("#firstName").on("change", (e) => {
-            validateInput("#firstName", ($("#firstName").val().length < 2), "First name is too short");
-            /* if($("#firstName").val().length < 2)
+            if($("#firstName").val().length < 2)
             {
                 $("#errorMessage")[0].textContent = "First name is too short";
                 $("#errorMessage").show();
@@ -172,12 +167,11 @@ class Contact
             {
                 $("#errorMessage").hide();
                 $("#firstName").css("border", "1px solid #ced4da");
-            } */
+            }
         });
 
         $("#lastName").on("change", (e) => {
-            validateInput("#lastName", ($("#lastName").val().length < 2), "Last name is too short");
-            /* if($("#lastName").val().length < 2)
+            if($("#lastName").val().length < 2)
             {
                 $("#errorMessage")[0].textContent = "Last name is too short";
                 $("#errorMessage").show();
@@ -189,7 +183,7 @@ class Contact
             {
                 $("#errorMessage").hide();
                 $("#lastName").css("border", "1px solid #ced4da");
-            } */
+            }
         });
 
         $("#submitButton").on("click", (e) =>

@@ -176,7 +176,7 @@ class Contact
         });
 
         $("#lastName").on("change", (e) => {
-            validateInput("#lastName", ($("#lastName").val().length < 2), "Last name is too short");
+            validateInput("#firstName", ($("#lasstName").val().length < 2), "Last name is too short");
             /* if($("#lastName").val().length < 2)
             {
                 $("#errorMessage")[0].textContent = "Last name is too short";

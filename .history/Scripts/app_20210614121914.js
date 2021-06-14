@@ -176,8 +176,8 @@ class Contact
         });
 
         $("#lastName").on("change", (e) => {
-            validateInput("#lastName", ($("#lastName").val().length < 2), "Last name is too short");
-            /* if($("#lastName").val().length < 2)
+            validateInput("#firstName", ($("#firstName").val().length < 2), "First name is too short");
+            if($("#lastName").val().length < 2)
             {
                 $("#errorMessage")[0].textContent = "Last name is too short";
                 $("#errorMessage").show();
@@ -189,7 +189,7 @@ class Contact
             {
                 $("#errorMessage").hide();
                 $("#lastName").css("border", "1px solid #ced4da");
-            } */
+            }
         });
 
         $("#submitButton").on("click", (e) =>
