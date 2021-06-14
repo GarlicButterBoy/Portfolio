@@ -61,7 +61,7 @@
 
          $("#projectsButton").on("click", notify, () => {
               location.href = "projects.html";
-         });
+        // });
     }
 
     function DisplayAbout()

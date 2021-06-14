@@ -44,7 +44,7 @@
                 DisplayContact();
                 break;
             default:
-                //console.error("Page Not Found");
+                console.error("Page Not Found");
                 break;
         }
 
@@ -53,13 +53,8 @@
 
     function DisplayHome()
     {
-        function notify() {
-            console.log( "clicked" );
-          }
-
         document.getElementById("home").className = "nav-link active";
-
-         $("#projectsButton").on("click", notify, () => {
+         $("#").on("click", () => {
               location.href = "projects.html";
          });
     }
