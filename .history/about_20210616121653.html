@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nick Sturch-Flint Portfolio</title>
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="./Content/app.css">
+</head>
+<body>
+  <!-- Main Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">Portfolio Navigation</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav ml-auto">
+              <a id="home" class="nav-link" aria-current="page" href="index.html"><i class="fas fa-home"></i> Home</a>
+              <a id="about" class="nav-link" href="about.html"><i class="fas fa-address-card"></i> About Me</a>
+              <a id="projects" class="nav-link" href="projects.html"><i class="fas fa-project-diagram"></i> Projects</a>
+              <a id="services" class="nav-link" href="services.html"><i class="fas fa-concierge-bell"></i> Services</a>
+              <a id="contact" class="nav-link" href="contact.html"><i class="fas fa-id-card-alt"></i> Contact Me</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!-- End of Main Navigation -->
+
+      <main class="container p-2" style=“padding-bottom: <amount> px;”>
+        <div class="row align-items-center">
+          <div class="col">
+            <div class="jumbotron p-2" id="contentArea">
+              <div class="card text-center mx-auto p-1" style="width: 30rem;">
+                <img src="./Content/Resources/20190721_092654.jpg" class="card-img-top" alt="Picture Here">
+                <div class="card-body">
+                  <h5 class="card-title">Nick Sturch-Flint</h5>
+                  <p class="card-text">Welcome to my Portfolio. I have built it from the ground up using HTML/CSS and JS, as I built it I switched over to EJS and an AJAX system, as well as using Typescript for JS. If you navigate to my Projects page you will see a number of projects that I feel show my best work. Over at Services you will see the types of services I offer! If you wish to reach me move over to the contact page and fill in your information and I will reach out to you as soon as possible!</p>
+                  <a href="contact.html" class="btn btn-primary"><i class="fas fa-id-card-alt"></i> Contact Me</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      
+
+      <footer >
+        <nav class="navbar fixed-bottom navbar-light bg-light p-2">
+          <div class="container-fluid">
+            <h6>Copyright 2021</h6>
+          </div>
+        </nav>
+      </footer>
+
+      <!-- Third Party Libraries -->
+      <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+      <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+      <!-- Third Party Libraries -->
+    <script src="./Scripts/app.js"></script>
+</body>
+</html>

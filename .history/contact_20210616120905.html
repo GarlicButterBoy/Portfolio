@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nick Sturch-Flint Portfolio</title>
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="./Content/app.css">
+</head>
+<body>
+  <!-- Main Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">Portfolio Navigation</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav ml-auto">
+              <a id="home" class="nav-link" aria-current="page" href="index.html"><i class="fas fa-home"></i> Home</a>
+              <a id="about" class="nav-link" href="about.html"><i class="fas fa-address-card"></i> About Me</a>
+              <a id="projects" class="nav-link" href="projects.html"><i class="fas fa-project-diagram"></i> Projects</a>
+              <a id="services" class="nav-link" href="services.html"><i class="fas fa-concierge-bell"></i> Services</a>
+              <a id="contact" class="nav-link" href="contact.html"><i class="fas fa-id-card-alt"></i> Contact Me</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!-- End of Main Navigation -->
+
+      <main class="container p-2">
+        <div class="row">
+          <div class="col ">
+            <div class="jumbotron p-2" id="contentArea">
+              <h1>Contact Me!</h1>
+
+              <div class="alert alert-warning" role="alert" id="errorMessage">
+              </div>
+
+              <form id="contactForm" class="" action="POST">
+
+              <label for="basic-url" class="form-label"><i class="fas fa-id-card-alt"></i> Contact Information</label>
+              <div class="input-group mb-3">
+                <input type="email" class="form-control" placeholder="Email" aria-label="Email" aria-describedby="basic-addon2" id="emailAddress" value="">
+                <span class="input-group-text" id="basic-addon2">test@example.com</span>
+              </div>
+
+              <div class="input-group mb-3">
+                <span class="input-group-text" id="basic-addon2">Phone Number</span>
+                <input type="tel" class="form-control" placeholder="Contact Number" aria-label="Contact Number" aria-describedby="basic-addon2" id="contactNumber" value="">
+                
+                <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                  <input type="radio" class="btn-check" name="btnradio" id="textCheck" autocomplete="off">
+                  <label class="btn btn-outline-primary" for="textCheck">Text</label>
+                
+                  <input type="radio" class="btn-check" name="btnradio" id="callCheck" autocomplete="off">
+                  <label class="btn btn-outline-primary" for="callCheck">Call</label>
+                </div>
+
+              </div>
+              
+              <label for="basic-url" class="form-label"><i class="fas fa-user-friends"></i> Personal Information</label>
+              <div class="input-group mb-3">
+                <span class="input-group-text" id="basic-addon3">First Name</span>
+                <input type="text" class="form-control" id="firstName" aria-describedby="basic-addon3" value="">
+
+                <span class="input-group-text">Surname</span>
+                <input type="text" class="form-control" aria-label="Surname" id="lastName" value="">
+              </div>
+              
+              <div class="input-group mb-3">
+                <span class="input-group-text">Preferred Name</span>
+                <input type="text" class="form-control" aria-label="Preferred Name" id="prefName" value="">
+              </div>
+              
+              
+              
+              <div class="input-group">
+                <span class="input-group-text">Message</span>
+                <textarea class="form-control" placeholder="Reach out to me with a personalized message" aria-label="Message" id="message" value=""></textarea>
+              </div>
+              <button class="btn btn-primary mt-2" type="submit" id="submitButton"><i class="fas fa-file-import"></i> Submit</button>
+              <button class="btn btn-secondary mt-2" type="reset" id="resetButton"><i class="fas fa-undo-alt"></i> Reset</button>
+
+            </form>
+            </div>
+          </div>
+        </div>
+      </main>
+      
+
+      <footer>
+        <nav class="navbar fixed-bottom navbar-light bg-light">
+          <div class="container-fluid">
+            <h6>Copyright 2021</h6>
+          </div>
+        </nav>
+      </footer>
+
+      <!-- Third Party Libraries -->
+      <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+      <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+      <!-- Third Party Libraries -->
+    <script src="./Scripts/app.js"></script>
+</body>
+</html>
